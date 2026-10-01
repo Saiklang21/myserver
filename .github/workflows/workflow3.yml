@@ -1,0 +1,13 @@
+name: workflow3
+on: 
+  workflow_run: 
+    workflows: ["main"]
+    types: 
+      - completed
+      
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print_workflow3
+        uses: echo "workflow3"
