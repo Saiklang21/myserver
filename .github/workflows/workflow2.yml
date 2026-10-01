@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print_workflow2
-        uses: echo "workflow2"
+        run: echo "workflow2"
