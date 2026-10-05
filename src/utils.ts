@@ -1,19 +1,20 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.utils = void 0;
 function hello() {
     return "Hello World";
 }
-function add(a, b) {
+
+function add(a: number, b: number) : number {
     return a * b;
 }
-function isValidEmail(email) {
+function isValidEmail(email: string): boolean {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
-function isValidAge(age) {
+
+function isValidAge(age: number): boolean {
     return Number.isInteger(age) && age >= 0 && age <= 120;
 }
-exports.utils = {
+
+
+export const utils = {
     hello,
     add,
     isValidEmail,
